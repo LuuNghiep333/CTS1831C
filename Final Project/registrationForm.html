@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi-GB">
+
+<head>
+  <title> Đăng Kí Môn Học 2024 </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="selectItems.js"></script>
+</head>
+
+<body>
+  <form action="https://cgi.csc.liv.ac.uk/~ullrich/COMP519/examples/process.php" method="post" id="info">
+    <fieldset class="leftField">
+      <label for="studentID">Thẻ ID</label><br>
+      <input type="text" id="studentID" name="ID" form="info"><br>
+      <label for="birthDay">Ngày Sinh</label><br>
+      <input type="date" id="birthDay" name="Ngày Sinh" form="info"><br>
+    </fieldset>
+    <fieldset class="rightField">
+      <label for="name">Họ Tên</label><br>
+      <input type="text" id="name" name="Họ Tên" form="info"><br>
+      <label>Giới Tính</label><br>
+      <input type="radio" id="male" name="Giới Tính" value="Nam" form="info">
+      <label for="male">Nam</label>
+      <input type="radio" id="female" name="Giới Tính" value="Nữ" form="info">
+      <label for="female">Nữ</label>
+    </fieldset>
+    <fieldset class="centerField">
+      <div class="newItems">
+        <label for="listBox1">Danh Sách Môn Học</label><br>
+        <select multiple="multiple" id="listBox1">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="button">
+        <input type='button' id='buttonRight' value=">"><br>
+        <input type='button' id='buttonRightAll' value=">>"><br>
+        <input type='button' id='buttonLeft' value="<"><br>
+        <input type='button' id='buttonLeftAll' value="<<"><br>
+      </div>
+      <div class="selectItems">
+        <label for="listBox2">Danh Sách Đăng Kí</label><br>
+        <select name="Môn Học" multiple="multiple" id="listBox2" form="info">
+        </select>
+      </div>
+    </fieldset>
+    <fieldset class="centerField">
+      <input type="submit" formtarget="_blank" value="Đăng Kí" form="info">
+      <input type="reset" value="Điền Lại " form="info">
+    </fieldset>
+  </form>
+</body>
+
+</html>

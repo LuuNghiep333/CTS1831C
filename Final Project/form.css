@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #5f6368;
+  color: #6040b2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 567px;
+}  
+
+label {
+  display: inline-block;
+  background-color: #6040b2;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #efecf8;
+}
+
+fieldset {
+  margin: 0;
+  background-color: #bbbdbe;
+  border-width: 0;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+fieldset.leftField
+fieldset.rightField {
+  width: 50%;
+}
+fieldset.centerField {
+  flex: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media (max-width: 755px) {
+  fieldset {
+    flex: 100%;
+    justify-content: center;
+  }
+}
+
+fieldset input{
+  border-width: 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 5px;
+  color: #5f6368;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+fieldset input[type="text"], 
+fieldset input[type="date"],
+fieldset input[type="submit"],
+fieldset input[type="reset"] {
+  width: 90%;
+  margin: 5px;
+}
+fieldset input[type="button"]{
+  width: 135px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+fieldset select{
+  width: 180px;
+  height: 110px;
+  border-width: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #ffffff;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+select option{
+  color: #5f6368;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+select option:hover{
+  color: #ffffff;
+  background-color: #6040b2;
+}
+input[type="button"]:hover{
+  color: #ffffff;
+  background-color: #6040b2;
+}
